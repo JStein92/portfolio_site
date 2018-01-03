@@ -1,0 +1,32 @@
+<div class="header">
+  <h2>{{header.toUpperCase()}}</h2>
+</div>
+<hr>
+
+<div class="projects-wrapper">
+  <div *ngFor="let projectSet of projects; let i = index" [attr.data-index]="i">
+    <h3 class="sub-header">{{projectSet[0].title}}</h3>
+    <div *ngFor="let project of projectSet" class="projects">
+      <div *ngIf="project.name">
+        <div class="image">
+          <a target="_blank" href="{{project.link}}">
+            <img src="{{project.image}}" alt="">
+            <div class="label">
+              <span>
+                <h1>
+                  {{project.name}}
+                </h1>
+                <br>
+                {{project.description}}
+              </span>
+            </div>
+            <div *ngIf="project.github" class="github-link">
+              <a target="_blank" href="{{project.github}}">Github</a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr *ngIf="i < projects.length-1">
+  </div>
+</div>

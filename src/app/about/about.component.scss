@@ -1,0 +1,42 @@
+img {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.image {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.summary, .skills {
+  color: #545454;
+}
+
+.summary {
+  text-align: left;
+  letter-spacing: 1px;
+  margin: 40px 30px;
+}
+
+.skills {
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 1px;
+  h1 {
+    font-size: 1em;
+  }
+  li {
+    margin-top: 2px;
+
+  }
+}
+
+hr {
+  margin-top: 30px;
+}
