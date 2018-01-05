@@ -83,7 +83,7 @@ AboutComponent = __decorate([
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <div class=\"nav\">\r\n    <h1 class=\"title\">{{title.toUpperCase()}}</h1>\r\n    <div class=\"header-nav\">\r\n      <span [ngClass]=\"currentRoute('/home')\">\r\n        <a [routerLink]=\"['home']\">Web Developement</a>\r\n      </span>\r\n      <span [ngClass]=\"currentRoute('/about')\">\r\n        <a [routerLink]=\"['about']\">About</a>\r\n      </span>\r\n    </div>\r\n  </div>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
+module.exports = "<head>\r\n  <link\r\n  href=\"http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css\"\r\n  rel=\"stylesheet\"  type='text/css'>\r\n</head>\r\n\r\n<div class=\"container\">\r\n  <div class=\"nav\">\r\n    <h1 class=\"title\">{{title.toUpperCase()}}</h1>\r\n    <div class=\"header-nav\">\r\n      <span [ngClass]=\"currentRoute('/home')\">\r\n        <a [routerLink]=\"['home']\">Web Developement</a>\r\n      </span>\r\n      <span [ngClass]=\"currentRoute('/about')\">\r\n        <a [routerLink]=\"['about']\">About</a>\r\n      </span>\r\n    </div>\r\n  </div>\r\n  <router-outlet></router-outlet>\r\n  <app-footer></app-footer>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -95,7 +95,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".nav {\n  display: inline-block;\n  margin: 20px; }\n\n.title {\n  text-align: center;\n  margin-top: 0px;\n  margin-left: 8vw;\n  font-size: 3.5em;\n  margin-bottom: 5px;\n  float: left;\n  letter-spacing: 5px;\n  color: #333; }\n\n.header-nav {\n  float: right;\n  margin-top: 20px;\n  margin-right: 20px;\n  margin-left: 6vw;\n  text-align: center;\n  letter-spacing: 2px; }\n  .header-nav a {\n    display: inline-block;\n    margin-left: 30px;\n    font-size: 1.3em;\n    text-decoration: none;\n    color: grey; }\n    .header-nav a:hover {\n      color: black; }\n\n.container {\n  margin: 40px;\n  letter-spacing: 3px; }\n\n@media (max-width: 1100px) {\n  .container {\n    margin: 5px;\n    text-align: center; }\n  .nav {\n    display: inline-block;\n    margin-top: 0px;\n    margin-bottom: 10px;\n    margin: 10px; }\n  .title {\n    float: none;\n    margin-left: 0px;\n    text-align: center;\n    margin-top: 0px;\n    font-size: 6vw;\n    margin-bottom: 5px; }\n  .header-nav {\n    margin-top: 5px;\n    margin-right: 0px;\n    margin-left: 0px;\n    float: none; }\n    .header-nav a {\n      display: inline-block;\n      margin-right: 2vw;\n      margin-left: 0px;\n      font-size: 2vw; } }\n\n.active a {\n  color: #234463;\n  font-weight: 600; }\n", ""]);
+exports.push([module.i, ".nav {\n  display: inline-block;\n  margin: 20px; }\n\n.title {\n  text-align: center;\n  margin-top: 0px;\n  margin-left: 8vw;\n  font-size: 3.5em;\n  margin-bottom: 5px;\n  float: left;\n  letter-spacing: 5px;\n  color: #333; }\n\n.header-nav {\n  float: right;\n  margin-top: 20px;\n  margin-right: 20px;\n  margin-left: 6vw;\n  text-align: center;\n  letter-spacing: 2px; }\n  .header-nav a {\n    display: inline-block;\n    margin-left: 30px;\n    font-size: 1.3em;\n    text-decoration: none;\n    color: grey; }\n    .header-nav a:hover {\n      color: black; }\n\n.container {\n  margin: 40px;\n  letter-spacing: 3px; }\n\n@media (max-width: 1100px) {\n  .container {\n    margin: 20px;\n    text-align: center; }\n  .nav {\n    display: inline-block;\n    margin-top: 0px;\n    margin-bottom: 10px;\n    margin: 10px; }\n  .title {\n    float: none;\n    margin-left: 0px;\n    text-align: center;\n    margin-top: 0px;\n    font-size: 6vw;\n    margin-bottom: 5px; }\n  .header-nav {\n    margin-top: 5px;\n    margin-right: 0px;\n    margin-left: 0px;\n    float: none; }\n    .header-nav a {\n      display: inline-block;\n      margin-right: 2vw;\n      margin-left: 0px;\n      font-size: 2vw; } }\n\n.active a {\n  color: #234463;\n  font-weight: 600; }\n", ""]);
 
 // exports
 
@@ -169,12 +169,14 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -198,7 +200,8 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__about_about_component__["a" /* AboutComponent */]
+            __WEBPACK_IMPORTED_MODULE_7__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__["a" /* FooterComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -212,6 +215,67 @@ AppModule = __decorate([
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/footer/footer.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "hr {\r\n  margin-top: 30px;\r\n  color: white;\r\n}\r\n.footer {\r\n  margin: 50px 0px 25px 0px;\r\n  letter-spacing: 1px;\r\n  text-align: center;\r\n}\r\n\r\ni {\r\n  margin-left: 30px;\r\n  font-size: 1.5em;\r\n  color: black;\r\n}\r\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/footer/footer.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<hr>\n<div class=\"footer\">\n  <a href=\"https://www.linkedin.com/in/jonathan-armen-stein/\"><i class=\"fa fa-linkedin fa-lg\" aria-hidden=\"true\"></i></a>\n  <a href=\"https://github.com/JStein92\"><i class=\"fa fa-github fa-lg\" aria-hidden=\"true\"></i></a>\n  <i class=\"fa fa-envelope fa-lg\" aria-hidden=\"true\"></i> <span> JonathanStein@live.com</span>\n  <i class=\"fa fa-phone fa-lg\" aria-hidden=\"true\"></i><span> 425-214-6105</span>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/footer/footer.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    return FooterComponent;
+}());
+FooterComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-footer',
+        template: __webpack_require__("../../../../../src/app/footer/footer.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/footer/footer.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], FooterComponent);
+
+//# sourceMappingURL=footer.component.js.map
 
 /***/ }),
 
@@ -230,7 +294,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".header h2 {\n  font-weight: 100;\n  text-align: center;\n  font-size: 1.5em;\n  margin-bottom: 30px;\n  color: #474747; }\n\n.projects-wrapper {\n  text-align: center;\n  margin: 40px; }\n  .projects-wrapper hr {\n    margin: 40px; }\n  .projects-wrapper .sub-header {\n    margin-top: 40px;\n    margin-bottom: 15px;\n    color: #474747; }\n  .projects-wrapper .projects {\n    text-align: center;\n    display: inline-block; }\n    .projects-wrapper .projects .image {\n      margin: 20px 20px 0px 0px;\n      width: 100%;\n      position: relative; }\n      .projects-wrapper .projects .image img {\n        width: 35vw;\n        box-shadow: 0px 0px 10px grey; }\n    .projects-wrapper .projects .label {\n      transition: all 0.2s;\n      letter-spacing: 1px;\n      font-weight: 100;\n      text-align: left;\n      position: absolute;\n      top: 30%;\n      left: 10px;\n      width: 70%;\n      background: rgba(0, 0, 0, 0.8);\n      color: white; }\n      .projects-wrapper .projects .label h1 {\n        padding: 0px;\n        margin: 0px; }\n      .projects-wrapper .projects .label span {\n        display: inline-block;\n        font-size: .7em;\n        padding: 10px;\n        margin: 3%; }\n    .projects-wrapper .projects .github-link {\n      position: absolute;\n      bottom: 5px;\n      right: 10px;\n      width: 100px;\n      background: rgba(255, 255, 255, 0.95);\n      border-radius: 5px 0 0 0;\n      color: black; }\n      .projects-wrapper .projects .github-link a {\n        color: black;\n        text-decoration: none; }\n        .projects-wrapper .projects .github-link a:hover {\n          text-decoration: underline; }\n      .projects-wrapper .projects .github-link:hover {\n        background: white; }\n    .projects-wrapper .projects:hover .label {\n      width: 80%;\n      background: rgba(0, 0, 0, 0.92); }\n\n@media (max-width: 1100px) {\n  .header h2 {\n    font-size: 3vw; }\n  .projects-wrapper {\n    text-align: center;\n    margin: 0px; }\n    .projects-wrapper .sub-header {\n      font-size: 2.3vw;\n      margin: 30px 0px 0px 0px; }\n    .projects-wrapper hr {\n      margin: 20px 0px 20px; }\n    .projects-wrapper .projects {\n      text-align: center;\n      display: inline-block; }\n      .projects-wrapper .projects .image {\n        width: 100%;\n        position: relative; }\n        .projects-wrapper .projects .image img {\n          width: 100%; }\n        .projects-wrapper .projects .image .label {\n          font-weight: 100;\n          text-align: left;\n          position: absolute;\n          top: 30%;\n          left: 0;\n          width: 70%;\n          color: white; }\n          .projects-wrapper .projects .image .label h1 {\n            padding: 0px;\n            margin: 0px;\n            font-size: 3vw; }\n          .projects-wrapper .projects .image .label span {\n            display: inline-block;\n            font-size: 2vw;\n            padding: 10px;\n            margin: 3%; }\n        .projects-wrapper .projects .image .github-link {\n          right: 0px; } }\n", ""]);
+exports.push([module.i, ".header h2 {\n  font-weight: 100;\n  text-align: center;\n  font-size: 1.5em;\n  margin-bottom: 30px;\n  color: #474747; }\n\n.projects-wrapper {\n  text-align: center;\n  margin: 40px; }\n  .projects-wrapper hr {\n    margin: 40px; }\n  .projects-wrapper .sub-header {\n    margin-top: 40px;\n    margin-bottom: 15px;\n    color: #474747; }\n  .projects-wrapper .projects {\n    text-align: center;\n    display: inline-block; }\n    .projects-wrapper .projects .image {\n      margin: 20px 20px 0px 0px;\n      width: 100%;\n      position: relative; }\n      .projects-wrapper .projects .image img {\n        width: 35vw;\n        box-shadow: 0px 0px 10px grey; }\n    .projects-wrapper .projects .label {\n      transition: all 0.2s;\n      letter-spacing: 1px;\n      font-weight: 100;\n      text-align: left;\n      position: absolute;\n      top: 30%;\n      left: 10px;\n      width: 70%;\n      background: rgba(0, 0, 0, 0.8);\n      color: white; }\n      .projects-wrapper .projects .label h1 {\n        padding: 0px;\n        margin: 0px; }\n      .projects-wrapper .projects .label span {\n        display: inline-block;\n        font-size: .7em;\n        padding: 10px;\n        margin: 3%; }\n    .projects-wrapper .projects .github-link {\n      position: absolute;\n      bottom: 5px;\n      right: 10px;\n      width: 100px;\n      background: rgba(255, 255, 255, 0.95);\n      border-radius: 5px 0 0 0;\n      color: black; }\n      .projects-wrapper .projects .github-link a {\n        color: black;\n        text-decoration: none; }\n        .projects-wrapper .projects .github-link a:hover {\n          text-decoration: underline; }\n      .projects-wrapper .projects .github-link:hover {\n        background: white; }\n    .projects-wrapper .projects:hover .label {\n      width: 80%;\n      background: rgba(0, 0, 0, 0.92); }\n\n@media (max-width: 1100px) {\n  .header h2 {\n    font-size: 3vw; }\n  .projects-wrapper {\n    text-align: center;\n    margin: 0px; }\n    .projects-wrapper .sub-header {\n      font-size: 2.3vw;\n      margin: 30px 0px 0px 0px; }\n    .projects-wrapper hr {\n      margin: 20px 0px 20px; }\n    .projects-wrapper .projects {\n      text-align: center;\n      display: inline-block; }\n      .projects-wrapper .projects .image {\n        width: 100%;\n        position: relative; }\n        .projects-wrapper .projects .image img {\n          width: 100%; }\n        .projects-wrapper .projects .image .label {\n          font-weight: 100;\n          text-align: left;\n          position: absolute;\n          top: 30%;\n          left: 0;\n          width: 70%;\n          color: white; }\n          .projects-wrapper .projects .image .label h1 {\n            padding: 0px;\n            margin: 0px;\n            font-size: 3vw; }\n          .projects-wrapper .projects .image .label span {\n            display: inline-block;\n            font-size: 2vw;\n            padding: 10px;\n            margin: 3%; }\n        .projects-wrapper .projects .image .github-link {\n          right: 0px; } }\n\nhr {\n  color: white; }\n", ""]);
 
 // exports
 
