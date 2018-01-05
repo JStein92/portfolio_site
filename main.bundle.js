@@ -83,7 +83,7 @@ AboutComponent = __decorate([
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<head>\r\n  <link\r\n  href=\"http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css\"\r\n  rel=\"stylesheet\"  type='text/css'>\r\n</head>\r\n\r\n<div class=\"container\">\r\n  <div class=\"nav\">\r\n    <h1 class=\"title\">{{title.toUpperCase()}}</h1>\r\n    <div class=\"header-nav\">\r\n      <span [ngClass]=\"currentRoute('/home')\">\r\n        <a [routerLink]=\"['home']\">Web Developement</a>\r\n      </span>\r\n      <span [ngClass]=\"currentRoute('/about')\">\r\n        <a [routerLink]=\"['about']\">About</a>\r\n      </span>\r\n    </div>\r\n  </div>\r\n  <router-outlet></router-outlet>\r\n  <app-footer></app-footer>\r\n</div>\r\n"
+module.exports = "<head>\r\n  <link\r\n  href=\"//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css\"\r\n  rel=\"stylesheet\"  type='text/css'>\r\n</head>\r\n\r\n<div class=\"container\">\r\n  <div class=\"nav\">\r\n    <h1 class=\"title\">{{title.toUpperCase()}}</h1>\r\n    <div class=\"header-nav\">\r\n      <span [ngClass]=\"currentRoute('/home')\">\r\n        <a [routerLink]=\"['home']\">Web Developement</a>\r\n      </span>\r\n      <span [ngClass]=\"currentRoute('/about')\">\r\n        <a [routerLink]=\"['about']\">About</a>\r\n      </span>\r\n    </div>\r\n  </div>\r\n  <router-outlet></router-outlet>\r\n  <app-footer></app-footer>\r\n</div>\r\n"
 
 /***/ }),
 
